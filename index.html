@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2-Emissionen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <div class="website">
+        <div class="werbung_l">Hier könnte Ihre Werbung stehen!</div>
+
+        <div class="content">
+            <div class="header1">
+
+                <ul class="nav1">
+                    <li> <img id="logov1" src="images/helfen.png" width="50em"> </li>
+                    <li> <a class="link1" href="index.html"> Startseite </a> </li>
+                    <li><a class="link1" href="error_404.html"> Verein </a></li>
+                    <li><a class="link1" href="error_404.html"> Kontakt </a></li>
+                </ul>
+            </div>
+
+            <div class="content1">
+
+                </br>
+                <h1>CO2-Emissionen 2025</h1>
+                <br>
+
+                <table id="co2table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th onclick="sortiereTabelle(0)">Land</th>
+                            <th onclick="sortiereTabelle(1)">Unternehmen</th>
+                            <th onclick="sortiereTabelle(2)">CO2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="a1" onclick="sortiereTabelle(0)">Frankreich</td>
+                            <td id="a2" onclick="sortiereTabelle(1)">Resident Corp</td>
+                            <td id="a3" onclick="sortiereTabelle(2)">294354</td>
+                        </tr>
+                        <tr>
+                            <td id="b1" onclick="sortiereTabelle(0)">Deutschland</td>
+                            <td id="b2" onclick="sortiereTabelle(0)">Kruppstahl</td>
+                            <td id="b3" onclick="sortiereTabelle(0)">99477</td>
+                        </tr>
+                        <tr>
+                            <td id="c1" onclick="sortiereTabelle(0)">Japan</td>
+                            <td id="c2" onclick="sortiereTabelle(1)">Nintendo</td>
+                            <td id="c3" onclick="sortiereTabelle(2)">3</td>
+                        </tr>
+                        <tr>
+                            <td id="d1" onclick="sortiereTabelle(0)">Taiwan</td>
+                            <td id="d2" onclick="sortiereTabelle(1)">Squid</td>
+                            <td id="d3" onclick="sortiereTabelle(2)">523575</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <input type="text" id="filterEingabe" onkeyup="filterTabelle()" placeholder="Filter..."><br><br>
+
+                <input type="file" id="fileInput" />
+                <button id="test1">JSON einlesen</button>
+            </div>
+
+            <div class="footer1">© 2025 Umweltbehörde AG. Alle Rechte vorbehalten
+                <br>
+                Lizenz by Gards-DEV
+            </div>
+        </div>
+
+        <div class="werbung_r">Hier könnte Ihre Werbung stehen!</div>
+
+
+
+
+
+
+
+        <script src="javascript.js"></script>
+</body>
+
+</html>
